@@ -3,8 +3,18 @@
   "version": "0.0.1",
   "description": "An example for react, webpack, babel commbined to express",
   "main": "server.js",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-3"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/nodemon server.js --exec babel-node",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register ./test/*.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +25,20 @@
   "bugs": {
     "url": "https://github.com/ole3021/express-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/ole3021/express-react-boilerplate#readme"
+  "homepage": "https://github.com/ole3021/express-react-boilerplate#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-3": "^6.11.0",
+    "express": "^4.14.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-polyfill": "^6.13.0",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.10.0",
+    "standard": "^7.1.2",
+    "supertest": "^2.0.0"
+  }
 }
