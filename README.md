@@ -5,14 +5,31 @@ This is a boilerplate for start build Express&react proejct.
 ## Project Structure
 ```
 .
-├── app               // client react folder
-├── config            // configurations like routes, environments, and enums
-├── lib               // common libraries
-├── src               // server folder
-│   ├── controllers   // server controllers
-│   ├── models        // server models
-│   └── views         // server views
-└── test              // test scripts
+├── app               // react client
+│   ├── actions
+│   ├── app.js        // client entry point
+│   ├── components
+│   ├── containers
+│   ├── index.html
+│   ├── languages
+│   └── reducers
+├── config             // project configurations
+│   ├── env
+│   ├── index.js
+│   ├── initApp.js
+│   ├── nodemon.json
+│   └── webpack
+├── lib                // common libraries
+│   └── logger.js
+├── package.json
+├── server.js          // server entry point
+├── src
+│   ├── controllers    // server controllers
+│   ├── models         // server models
+│   └── views          // server views
+└── test               // test scripts
+    └── index.js
+
 ```
 
 ## Node modules
