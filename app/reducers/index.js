@@ -1,10 +1,19 @@
 import { combineReducers } from 'redux'
-import todos from './todos'
-import visibilityFilter from './visibilityFilter'
+import { routerReducer } from 'react-router-redux'
 
-const todoApp = combineReducers({
-  todos,
-  visibilityFilter
+import languages from './languages'
+import {menus, currentMenu, currentSubMenu} from './menus'
+import messages from './messages'
+import notifications from './notifications'
+
+const reducers = combineReducers({
+  languages,
+  menus,
+  messages,
+  currentMenu,
+  currentSubMenu,
+  notifications,
+  routing: routerReducer
 })
 
-export default todoApp
+export default reducers

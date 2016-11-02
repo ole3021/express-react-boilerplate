@@ -1,22 +1,17 @@
 import React from 'react'
-import FilterLink from '../containers/FilterLink'
 
-const Footer = () => (
-  <p>
-    Show:
-    {" "}
-    <FilterLink filter="SHOW_ALL">
-      All
-    </FilterLink>
-    {", "}
-    <FilterLink filter="SHOW_ACTIVE">
-      Active
-    </FilterLink>
-    {", "}
-    <FilterLink filter="SHOW_COMPLETED">
-      Completed
-    </FilterLink>
-  </p>
-)
+class Footer extends React.Component {
+  render () {
+    return (
+      <footer className='main-footer'>
+        <div className='pull-right hidden-xs'>
+          <b>Version</b> 0.1.0
+        </div>
+        <strong>Copyright © 2013-2016 <a href='http://www.mobilenowgroup.com/'>Mobile Now Group</a>.</strong> All rights
+        reserved.
+      </footer>
+    )
+  }
+}
 
 export default Footer

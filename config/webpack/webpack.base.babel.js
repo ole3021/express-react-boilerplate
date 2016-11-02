@@ -64,7 +64,9 @@ module.exports = (options) => ({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV)
       }
-    })
+    }),
+    // used to solve moment './local' not found bug
+    new webpack.ContextReplacementPlugin(/\.\/locale$/, 'empty-module', false, /js$/)
   ]),
   postcss: () => options.postcssPlugins,
   resolve: {

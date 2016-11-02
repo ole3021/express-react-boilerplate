@@ -1,3 +1,3 @@
-exports.helloWorld = async (req, res) => {
-  res.send('Hello from Express!')
-}
+import * as wechatNow from './wechatNow'
+
+export { wechatNow }

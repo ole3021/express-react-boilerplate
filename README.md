@@ -1,6 +1,12 @@
-# Express-React-Boilerplate
+# mn_wechat_now_v2
+:star2: WechatNow V2 Repo :star2:
 
-This is a boilerplate for start build Express&react proejct.
+## Setup&start
+
+`npm install` will install all the required modules
+
+* `npm start` -> Start the Project
+* `npm test` -> Start the Test
 
 ## Project Structure
 ```
@@ -32,7 +38,7 @@ This is a boilerplate for start build Express&react proejct.
 
 ```
 
-## Node modules
+### Node modules
 * [babel](https://babeljs.io/) Use Async/Await and other stable ES7 features
   * babel-core >>For Test functions
   * babel-polyfill >>Help Mocha to run js written in babel
@@ -42,14 +48,15 @@ This is a boilerplate for start build Express&react proejct.
   * babel-loader >>For webpack to load file in Babel
   * babel-preset-react <<
   * babel-preset-react-hmre <<
-* ~~[Chalk](https://github.com/chalk/chalk) >>Beautify console string style~~
 * [Express](http://expressjs.com/)
   * express
 * [mocha](https://mochajs.org/) >>TDD/BDD framework
 * [nodemon](http://nodemon.io/) >>Automatically reload changes
 * [react](https://facebook.github.io/react/) >>Hybrid Web UI framework
   * react-dom >>Allow react interact with DOM
-  * react-redux >>react binding for redux
+  * [react-redux](https://github.com/reactjs/react-redux) >>React binding for redux
+  * [react-router](https://github.com/reactjs/react-router) >>Routing library for react
+  * [react-router-redux](https://github.com/reactjs/react-router-redux) >> Sync React router in Redux
 * [redux](http://redux.js.org/) >>State container for React
 * [standard](http://standardjs.com/) >>Javascipt standard style and formatter
 * [supertest](https://github.com/visionmedia/supertest) >>Http assertions framework
@@ -59,5 +66,13 @@ This is a boilerplate for start build Express&react proejct.
   * webpack-hot-middleware >> Hot reload during file changes
 * [winston](https://github.com/winstonjs/winston) >>Use to instead default log
 
-## TODO:
-- [ ] add mongodb sample
+## Best Practical Used
+
+### Code Management(Git)
+[A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+
+### React-Redux
+[Reducing Boilerplate](http://redux.js.org/docs/recipes/ReducingBoilerplate.html)
+
+### ChangeLog
+[Keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/)

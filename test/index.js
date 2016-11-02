@@ -9,7 +9,7 @@ require('babel-core/register')
 
 /* global describe it */
 describe('Index', function () {
-  it('should return helloWorld', (done) => {
+  it('should return something', (done) => {
     request.get('/').expect(200).end(done)
   })
 })

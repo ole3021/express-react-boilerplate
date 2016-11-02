@@ -47,6 +47,6 @@ module.exports = require('./webpack.base.babel')({
  */
 function templateContent () {
   return fs.readFileSync(
-    path.resolve(process.cwd(), 'app/index.html')
+    path.resolve(process.cwd(), 'app/wechatNow.html')
   ).toString()
 }
